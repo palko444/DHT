@@ -23,7 +23,7 @@ def doit(obj, retry=5000, file='/tmp/dht22'):
 			f.close()
 			break
 
-instance = dht11.DHT11(pin=5, sensor="DHT22")
-instance1 = dht11.DHT11(pin=7, sensor="DHT22")
+instance = dht.DHT(pin=5, sensor="DHT22")
+instance1 = dht.DHT(pin=7, sensor="DHT22")
 doit(file='/home/sensor/th.csv', obj=instance)
 doit(file='/home/sensor/th1.csv', obj=instance1)
